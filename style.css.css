@@ -1,0 +1,133 @@
+/* General Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #c7a557; /* Goldish hover effect */
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-image: url('../images/hero-bg.jpg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c7a557;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    nav a {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  /* Existing CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Your new CSS for the contact form */
+.contact-form {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add the rest of the CSS styles as mentioned above... */
