@@ -33,7 +33,7 @@
     .hero {
       text-align: center;
       padding: 5rem 2rem;
-      background-image: url('images/hero-bg.jpg'); /* Add a relevant background image */
+      background-image: url('images/hero-bg.jpg'); /* Optional: Replace with actual image */
       background-size: cover;
       background-position: center;
       color: white;
@@ -57,6 +57,31 @@
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
+    /* Gallery Section */
+    .gallery {
+      padding: 3rem 2rem;
+      background-color: #ffffff;
+      text-align: center;
+    }
+    .gallery h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .gallery-images img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
     footer {
       background-color: #2e2e2e;
       color: white;
@@ -91,9 +116,21 @@
     </p>
   </section>
 
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h3>Our Work in Action</h3>
+    <div class="gallery-images">
+      <img src="factory-outdoor.jpg" alt="Granite Factory Outdoor">
+      <img src="saw-machine-1.jpg" alt="Saw Machine 1">
+      <img src="saw-machine-2.jpg" alt="Saw Machine 2">
+    </div>
+  </section>
+
   <footer>
     &copy; 2025 Baru Granites. All rights reserved.
   </footer>
 
 </body>
 </html>
+
+     
